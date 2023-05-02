@@ -29,14 +29,13 @@
             android:text="@string/title_activity_main"
             android:fontFamily="sans-serif"
             android:textColor="@color/black_500"
-            android:textSize="24sp"
-            />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView"
+            android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="24dp"
@@ -46,7 +45,7 @@
             android:text="@string/subtitle_activity_main"
             android:fontFamily="sans-serif"
             android:textColor="@color/black_200"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -60,10 +59,9 @@
             android:layout_marginRight="16dp"
             android:contentDescription="@string/all"
             app:srcCompat="@drawable/ic_menu"
-            tools:ignore="VectorDrawableCompat"
-            />
+            tools:ignore="VectorDrawableCompat" />
     </RelativeLayout>
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
@@ -81,17 +79,15 @@
             android:layout_gravity="center"
             android:contentDescription="@string/all"
             app:srcCompat="@drawable/ic_upload_file"
-            tools:ignore="VectorDrawableCompat"
-            />
+            tools:ignore="VectorDrawableCompat" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textSize="22sp"
-            android:text="@string/upload"/>
-
-
+            android:text="@string/upload" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
